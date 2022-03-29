@@ -2,7 +2,7 @@
                     ╔═╦═╗
                     ║║║║╠═╦╦╦╦══╦═╦╦╦╗
                     ║║║║║╩╣║║║║║║╩╣║║║
-Developed By:       ╚╩═╩╩═╩══╩╩╩╩═╩══╝
+Developed By:   REBECCA e LEO     ╚╩═╩╩═╩══╩╩╩╩═╩══╝
 */
 let order = []; // Ordem
 let clickedOrder = []; // Ordem dos clicks
