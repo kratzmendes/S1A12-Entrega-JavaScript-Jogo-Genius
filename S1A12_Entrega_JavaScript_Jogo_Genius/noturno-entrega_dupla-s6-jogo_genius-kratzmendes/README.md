@@ -1,5 +1,5 @@
 # Entrega: Jogo GENIUS
-oi
+
 ## Introdução
 
 Jogo da memória criado na década de 80 em que, aleatoriamente, será apresentada uma sequência de luzes e o usuário deverá repetir a sequência sorteada.
