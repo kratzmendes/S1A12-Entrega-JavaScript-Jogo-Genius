@@ -1,8 +1,6 @@
 /* BRANCH DO LEO
-                    ╔═╦═╗
-                    ║║║║╠═╦╦╦╦══╦═╦╦╦╗
-                    ║║║║║╩╣║║║║║║╩╣║║║
-Developed By:   REBECCA e LEO     ╚╩═╩╩═╩══╩╩╩╩═╩══╝
+
+Developed By:   REBECCA e LEO     
 */
 let order = []; // Ordem
 let clickedOrder = []; // Ordem dos clicks

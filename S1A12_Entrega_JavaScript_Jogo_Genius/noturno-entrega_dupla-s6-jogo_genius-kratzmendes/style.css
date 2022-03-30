@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'W95FA';
+    src: url("C:\Users\Leonardo\Kenzie\S1A12-Entrega-JavaScript-Jogo-Genius\S1A12_Entrega_JavaScript_Jogo_Genius\noturno-entrega_dupla-s6-jogo_genius-kratzmendes\w95fa-cufonfonts\W95FA.otf") format("opentype");
+}
+
+
+
+body    {
+    margin: 0;
+    background-color: #008282;
+    font-family: 'W95FA';
+    color: white;
+}
+
+
+.verde    {
+    background-color: green;
+    height: 379px;
+    width: 300px;
+    margin: 0px 0px 55px 50px;
+    border: solid 2px 
+        
+}
+
+.vermelho   {
+    grid-area: vermelho;
+    background-color: #0b0111;
+    border-top-right-radius: 100%;
+    background: radial-gradient(circle 1px at -5% 105%, transparent, transparent 120px, #FA448C 100px);
+    background-size: 100% 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+}
+
+.amarelo   {
+    grid-area: amarelo;
+    background-color: #0b0111;
+    border-bottom-left-radius: 100%;
+    background: radial-gradient(circle 1px at 105% 0%, transparent, transparent 120px, #FEC859 100px);
+    background-size: 100% 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+}
+
+.azul   {
+    background-color: #0b0111;
+    border-bottom-right-radius: 100%;
+    background: radial-gradient(circle 1px at -5% 0%, transparent, transparent 120px, #491D88 100px);
+    background-size: 100% 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+}
