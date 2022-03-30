@@ -152,6 +152,8 @@ function click(cor) {
 
 function verificaCliques() {
 
+    alert(`Sua vez de jogar!`);
+
     for(let i in coresClickadas) {
         if(coresClickadas[i] != cores[i]) {
             
@@ -160,7 +162,7 @@ function verificaCliques() {
         }
     }
     if(coresClickadas.length == cores.length) {
-        alert(`Pontuação: ${pontos}!\nVocê acertou!\n O seu level atual é de ${fase}!\nClique em OK para iniciar um novo jogo`);
+        alert(`Pontuação: ${pontos}!\nVocê acertou!\n O seu level atual é de ${fase}!`);
         proxFase();
     }
 }

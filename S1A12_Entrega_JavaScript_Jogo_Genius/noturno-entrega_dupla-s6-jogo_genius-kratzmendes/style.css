@@ -34,6 +34,7 @@ main {
     justify-content:space-around;
     align-items:center;
     flex-wrap: wrap; */
+    font-family: "W95FA";
     display: flex;
     flex-direction: row;
     width: 250px;
@@ -43,7 +44,7 @@ main {
 
 
 .verde    {
-
+    font-family: "W95FA";
     background-color: rgb(17, 247, 17);
     height: 80px;
     width: 80px;
