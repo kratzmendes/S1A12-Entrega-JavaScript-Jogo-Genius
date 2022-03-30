@@ -96,23 +96,62 @@ function criaCores(){
         
        // lightColor(elementColor, Number(i) + 1);
     }
+    //alert(`Cores geradas: ${cores}`);
 
     return cores;
 }
+function criaNomeCor(cor){
+    if(cor == 0) {
+        return divVermelho;
 
-let createColorElement = (color) => {
-    if(color == 0) {
-        return green;
+    } else if(cor == 1) {
+        return divVerde;
 
-    } else if(color == 1) {
-        return red;
+    } else if (cor == 2) {
+        return divAzul;
 
-    } else if (color == 2) {
-        return yellow;
-
-    } else if (color == 3) {
-        return blue;
+    } else if (cor == 3) {
+        return divAmarelo;
     }
 }
+
+divVermelho.onclick = () => click(0);
+divVerde.onclick = () => click(1);
+divAzul.onclick = () => click(2);
+divAmarelo.onclick = () => click(3);
+
+function click(cor) {
+
+    //alert('entrou na função click(cor)');
+    coresClickadas[coresClickadas.length] = cor;
+    criaNomeCor(cor).classList.add('selected');
+   
+    setTimeout(() => {
+
+        criaNomeCor(cor).classList.remove('selected');
+        verificaCliques();
+
+    },250);
+}
+
+
+function verificaCliques() {
+
+    for(let i in coresClickadas) {
+        if(coresClickadas[i] != cores[i]) {
+            alert('chamar vocePerdeu()');
+            vocePerdeu();
+            break;
+        }
+    }
+    if(coresClickadas.length == cores.length) {
+        alert(`Pontuação: ${pontos}!\nVocê acertou!\n O seu level atual é de ${fase}!\nClique em OK para iniciar um novo jogo`);
+        proxFase();
+    }
+}
+
+
+
+iniciaJogo();
 
 console.log(criaCores());
