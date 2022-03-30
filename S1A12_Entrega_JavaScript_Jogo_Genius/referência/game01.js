@@ -143,6 +143,10 @@ red.onclick = () => click(1);
 yellow.onclick = () => click(2);
 blue.onclick = () => click(3);
 
+
+
+
+
 // som da cor
 let soundColorPlay = (color) => {
     if ((color == 0) || (color == 'green')) {

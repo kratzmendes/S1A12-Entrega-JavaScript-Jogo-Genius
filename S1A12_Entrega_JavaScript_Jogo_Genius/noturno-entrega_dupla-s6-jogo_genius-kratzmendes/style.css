@@ -1,52 +1,96 @@
 @font-face {
-    font-family: 'W95FA';
-    src: url("C:\Users\Leonardo\Kenzie\S1A12-Entrega-JavaScript-Jogo-Genius\S1A12_Entrega_JavaScript_Jogo_Genius\noturno-entrega_dupla-s6-jogo_genius-kratzmendes\w95fa-cufonfonts\W95FA.otf") format("opentype");
+    font-family: "W95FA";
+    src: local("W95FA.otf");
 }
 
 
 
-body    {
-    margin: 0;
+body {
+    
+    margin: 0px 0px 55px 50px;
     background-color: #008282;
     font-family: 'W95FA';
     color: white;
+
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    height: 200px;
+    width: 200px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
 }
 
 
 .verde    {
+
     background-color: green;
-    height: 379px;
-    width: 300px;
-    margin: 0px 0px 55px 50px;
-    border: solid 2px 
+    height: 50px;
+    width: 50px;
+    margin: 20px 20px 20px 20px;
+    border: none 
+       
         
 }
 
 .vermelho   {
-    grid-area: vermelho;
-    background-color: #0b0111;
-    border-top-right-radius: 100%;
-    background: radial-gradient(circle 1px at -5% 105%, transparent, transparent 120px, #FA448C 100px);
-    background-size: 100% 100%;
-    background-position: 0 0, 100% 0;
-    background-repeat: no-repeat;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    margin: 20px 20px 20px 20px;
+    border: none 
+       
 }
 
 .amarelo   {
-    grid-area: amarelo;
-    background-color: #0b0111;
-    border-bottom-left-radius: 100%;
-    background: radial-gradient(circle 1px at 105% 0%, transparent, transparent 120px, #FEC859 100px);
-    background-size: 100% 100%;
-    background-position: 0 0, 100% 0;
-    background-repeat: no-repeat;
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    margin: 20px 20px 20px 20px;
+    border: none 
+       
 }
 
 .azul   {
-    background-color: #0b0111;
-    border-bottom-right-radius: 100%;
-    background: radial-gradient(circle 1px at -5% 0%, transparent, transparent 120px, #491D88 100px);
-    background-size: 100% 100%;
-    background-position: 0 0, 100% 0;
-    background-repeat: no-repeat;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin: 20px 20px 20px 20px;
+    border: none 
 }
+
+footer{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+p{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.devs{    
+
+    width: 400px;
+    border: none;
+}
+
+.credito{
+    margin: 20px 20px 20px 20px;
+    
+}
+
+.gitDev{
+    margin: 20px 20px 20px 20px;
+}
+
