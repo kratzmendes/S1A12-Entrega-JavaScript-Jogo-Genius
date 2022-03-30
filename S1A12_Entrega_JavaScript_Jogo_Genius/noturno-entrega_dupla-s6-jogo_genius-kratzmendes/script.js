@@ -98,7 +98,6 @@ function criaCores(){
         
         acendeCor(corDiv, Number(i) + 1);
     }
-    //alert(`Cores geradas: ${cores}`);
 
     return cores;
 }
@@ -139,8 +138,7 @@ divAmarelo.onclick = () => click(3);
 
 function click(cor) {
 
-    //alert('entrou na função click(cor)');
-    coresClickadas[coresClickadas.length] = cor;
+       coresClickadas[coresClickadas.length] = cor;
     criaNomeCor(cor).classList.add('selected');
    
     setTimeout(() => {
@@ -156,7 +154,7 @@ function verificaCliques() {
 
     for(let i in coresClickadas) {
         if(coresClickadas[i] != cores[i]) {
-            alert('chamar vocePerdeu()');
+            
             vocePerdeu();
             //break;
         }
@@ -168,7 +166,7 @@ function verificaCliques() {
 }
 
 function vocePerdeu() {
-    alert('entrou em vocePerdeu()');
+   
     alert(`Pontuação: ${pontos}!\nVocê perdeu o jogo!\n Você chegou atá a fase nº ${fase}!\nClique em OK para iniciar um novo jogo`);
     cores = [];
     coresClickadas = [];
