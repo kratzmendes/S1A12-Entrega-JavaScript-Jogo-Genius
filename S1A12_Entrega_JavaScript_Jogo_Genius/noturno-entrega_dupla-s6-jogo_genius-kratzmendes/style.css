@@ -6,12 +6,16 @@
 
 
 body {
+    background-image: url(./win95_logo.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: top center;
     
-    margin: 0px 0px 55px 50px;
+    margin: 100px 0px 55px 50px;
     background-color: #008282;
     font-family: 'W95FA';
     color: white;
-
+    
 }
 
 main {
@@ -19,57 +23,66 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* margin-bottom: 100px; */
 }
 
 .container{
-    height: 200px;
-    width: 200px;
+    /* height: 200px;
+    width: 220px;     
+    margin-left: 165px;
     display:flex;
     justify-content:space-around;
     align-items:center;
+    flex-wrap: wrap; */
+    display: flex;
+    flex-direction: row;
+    width: 250px;
     flex-wrap: wrap;
+    margin-left: 165px;
 }
 
 
 .verde    {
 
-    background-color: green;
-    height: 50px;
-    width: 50px;
+    background-color: rgb(17, 247, 17);
+    height: 80px;
+    width: 80px;
     margin: 20px 20px 20px 20px;
-    border: none 
+    border: 2px solid transparent 
        
         
 }
 
 .vermelho   {
     background-color: red;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     margin: 20px 20px 20px 20px;
-    border: none 
+    border: 2px solid transparent;
        
 }
 
+
 .amarelo   {
     background-color: yellow;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     margin: 20px 20px 20px 20px;
-    border: none 
+    border: 2px solid transparent; 
        
 }
 
 .azul   {
     background-color: blue;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     margin: 20px 20px 20px 20px;
-    border: none 
+    border: 2px solid transparent;
 }
 
 .selected {
     border: solid 2px white;
+    display: flex;
 }
 
 
@@ -77,6 +90,7 @@ footer{
     display:flex;
     justify-content:space-around;
     align-items:center;
+    margin-top: 100px;
 }
 p{
     display:flex;

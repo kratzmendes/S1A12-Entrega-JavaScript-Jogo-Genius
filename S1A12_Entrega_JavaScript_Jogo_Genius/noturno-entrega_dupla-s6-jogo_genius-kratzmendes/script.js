@@ -43,12 +43,14 @@ tagSpan.innerText = "Jogo criado por Leonardo Kratz e Rebecca Pires";
 
 const gitLeonardo = document.createElement("a");
 gitLeonardo.setAttribute("class","gitDev");
-gitLeonardo.setAttribute("href","");
+gitLeonardo.setAttribute("href","https://github.com/kratzmendes");
+gitLeonardo.setAttribute("target","_blank");
 gitLeonardo.innerText = "Github - Leonardo";
 
 const gitRebecca = document.createElement("a");
 gitRebecca.setAttribute("class","gitDev");
-gitRebecca.setAttribute("href","");
+gitRebecca.setAttribute("href","https://github.com/RebeccaPires");
+gitRebecca.setAttribute("target","_blank");
 gitRebecca.innerText = "Github - Rebecca";
 
 tagP.appendChild(tagSpan);
