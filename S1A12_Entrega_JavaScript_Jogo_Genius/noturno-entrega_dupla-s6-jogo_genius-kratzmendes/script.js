@@ -58,7 +58,6 @@ divDevs.appendChild(tagP);
 tagFooter.appendChild(divDevs);
 tagBody.appendChild(tagFooter);
 
-//lógica do jogo
 
 let cores = [];
 let coresClickadas = [];
@@ -74,6 +73,7 @@ function iniciaJogo(){
 
     alert('Bem vindo ao Genius! Iniciando novo jogo!');
     pontos = 0;
+    fase = 0;
 
     proxFase();
 }
@@ -90,11 +90,11 @@ function criaCores(){
     cores[cores.length] = novasCores;
     coresClickadas = [];
 
-    for(let i=0; i < cores.length;i++) {
+    for(let i in cores) {
         
-        let elementColor = createColorElement(cores[i]);
+        let corDiv = criaNomeCor(cores[i]);
         
-       // lightColor(elementColor, Number(i) + 1);
+        acendeCor(corDiv, Number(i) + 1);
     }
     //alert(`Cores geradas: ${cores}`);
 
@@ -114,6 +114,21 @@ function criaNomeCor(cor){
         return divAmarelo;
     }
 }
+
+function acendeCor(element, number) {
+    number = number * 500;
+
+    setTimeout(() => {
+        element.classList.add('selected');
+
+    }, number+250);
+
+    setTimeout(() => {
+        element.classList.remove('selected');
+  
+    }, number+500);
+}
+
 
 divVermelho.onclick = () => click(0);
 divVerde.onclick = () => click(1);
@@ -141,7 +156,7 @@ function verificaCliques() {
         if(coresClickadas[i] != cores[i]) {
             alert('chamar vocePerdeu()');
             vocePerdeu();
-            break;
+            //break;
         }
     }
     if(coresClickadas.length == cores.length) {
@@ -150,8 +165,13 @@ function verificaCliques() {
     }
 }
 
+function vocePerdeu() {
+    alert('entrou em vocePerdeu()');
+    alert(`Pontuação: ${pontos}!\nVocê perdeu o jogo!\n Você chegou atá a fase nº ${fase}!\nClique em OK para iniciar um novo jogo`);
+    cores = [];
+    coresClickadas = [];
 
+    iniciaJogo();
+}
 
 iniciaJogo();
-
-console.log(criaCores());

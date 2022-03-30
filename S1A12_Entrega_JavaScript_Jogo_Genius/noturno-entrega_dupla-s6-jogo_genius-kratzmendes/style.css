@@ -65,7 +65,7 @@ main {
     height: 50px;
     width: 50px;
     margin: 20px 20px 20px 20px;
-    border: none 
+    border: solid 2px #008282;
 }
 
 .selected {
