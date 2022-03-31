@@ -23,6 +23,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    
     /* margin-bottom: 100px; */
 }
 
@@ -87,13 +89,59 @@ main {
     display: flex;
 }
 
+.windows {
+    
+    background-color: #C3C3C3;
+    box-shadow: inset -1px -1px 0px 1px #262626, inset 1px 1px 0px 1px #F0F0F0, inset -3px -3px 0px 1px #7E7E7E, inset 4px 3px 0px 1px #B1B1B1;
+    
+}
+
+.windowsbtn {
+    
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background-color: #C3C3C3;
+    box-shadow: inset -1px -1px 0px 1px #262626, inset 1px 1px 0px 1px #F0F0F0, inset -3px -3px 0px 1px #7E7E7E, inset 3px 3px 0px 1px #B1B1B1;
+    
+}
+
+.iniciar{
+    height: 40px;
+    width: 120px;
+    margin: 0px 0px 0px 10px;
+}
 
 footer{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
     margin-top: 100px;
+ 
+    margin: 100px 0px 0px -50px;
+
+    height: 55px;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0; 
 }
+
+
+.windowstime{
+    height: 30px;
+    width: 139px;
+    border: solid 1px red;
+    margin: 0px 10px 0px 0px;
+}
+
+
+
+
+
 p{
     display:flex;
     justify-content:space-around;

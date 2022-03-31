@@ -31,7 +31,30 @@ tagBody.appendChild(tagMain);
 // criação da tag footer e seus atributos
 
 const tagFooter = document.createElement("footer");
+tagFooter.setAttribute("class","windows");
 
+
+const divIniciar = document.createElement("button");
+divIniciar.setAttribute("class","iniciar windowsbtn");
+tagFooter.appendChild(divIniciar);
+
+const divHora = document.createElement("div");
+divHora.setAttribute("class","windowstime");
+divHora.setAttribute("id","relogio");
+tagFooter.appendChild(divHora);
+
+let hoje = new Date();
+let hora = hoje.getHours() + ":" + hoje.getMinutes();
+
+
+/*
+let theDiv = document.getElementById("relogio");
+let content = document.createTextNode("HORA");
+theDiv.appendChild(content);
+*/
+
+
+/*
 const divDevs = document.createElement("div");
 divDevs.setAttribute("class","devs");
 
@@ -58,6 +81,20 @@ tagP.appendChild(gitRebecca);
 tagP.appendChild(gitLeonardo);
 divDevs.appendChild(tagP);
 tagFooter.appendChild(divDevs);
+*/
+
+/*
+
+    border-inline-start-style: solid;
+    box-shadow:0px 0px 0px 10px red inset;
+    outline: 5px solid green;
+    outline-offset: -5px;
+    
+    box-shadow: inset 0 -7px 9px -7px rgba(0,0,0,0.7);
+    background: linear-gradient(to bottom, #999 0, #ffffff 7px, #ffffff 100%);
+
+
+*/
 tagBody.appendChild(tagFooter);
 
 
@@ -84,6 +121,7 @@ function proxFase(){
     pontos++;
     fase++;
     criaCores();
+
 }
 
 function criaCores(){
@@ -98,7 +136,7 @@ function criaCores(){
         
         acendeCor(corDiv, Number(i) + 1);
     }
-
+//??????    alert(`Sua vez de jogar!`);
     return cores;
 }
 function criaNomeCor(cor){
@@ -127,7 +165,7 @@ function acendeCor(element, number) {
     setTimeout(() => {
         element.classList.remove('selected');
   
-    }, number+500);
+    }, number+600);
 }
 
 
@@ -138,8 +176,10 @@ divAmarelo.onclick = () => click(3);
 
 function click(cor) {
 
-       coresClickadas[coresClickadas.length] = cor;
+    coresClickadas[coresClickadas.length] = cor;
     criaNomeCor(cor).classList.add('selected');
+
+    
    
     setTimeout(() => {
 
@@ -152,7 +192,8 @@ function click(cor) {
 
 function verificaCliques() {
 
-    alert(`Sua vez de jogar!`);
+
+
 
     for(let i in coresClickadas) {
         if(coresClickadas[i] != cores[i]) {
@@ -175,5 +216,6 @@ function vocePerdeu() {
 
     iniciaJogo();
 }
+
 
 iniciaJogo();
