@@ -354,7 +354,7 @@ function vocePerdeu() {
 }
 
 
-iniciaJogo();
+divIniciar.onclick = () => iniciaJogo();
 
 let reiniciarJogo = document.getElementById("2");
 console.log(reiniciarJogo);
