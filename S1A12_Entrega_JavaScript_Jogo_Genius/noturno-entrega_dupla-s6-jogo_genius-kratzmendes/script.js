@@ -117,6 +117,7 @@ tagFooter.appendChild(divHora);
 let hoje = new Date();
 let hora = hoje.getHours() + ":" + hoje.getMinutes();
 
+alert(`${hora}`);
 
 /*  INNER HTML!!
 

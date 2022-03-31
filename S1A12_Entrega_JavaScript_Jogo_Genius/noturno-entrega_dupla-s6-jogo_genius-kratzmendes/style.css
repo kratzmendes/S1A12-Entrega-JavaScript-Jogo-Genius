@@ -1,7 +1,9 @@
 @font-face {
     font-family: "W95FA";
-    src: local("W95FA.otf");
+    src: url('http://fonts.cdnfonts.com/css/w95fa');
 }
+
+@import url('http://fonts.cdnfonts.com/css/w95fa');
 
 *{
     margin: 0px;
@@ -20,7 +22,7 @@ body {
     background-color: #008282;
     font-family: 'W95FA';
     color: white;
-    
+    font-family: 'W95FA', sans-serif;
 }
 
 main {
@@ -32,6 +34,7 @@ main {
     flex-wrap: wrap;
     align-self: auto;
     /* margin-right: 100px; */
+    font-family: 'W95FA', sans-serif;
 }
 
 .container{
@@ -42,7 +45,7 @@ main {
     justify-content:space-around;
     align-items:center;
     flex-wrap: wrap; */
-    font-family: "W95FA";
+    font-family: 'W95FA', sans-serif;
     display: flex;
     flex-direction: row;
     width: 250px;
@@ -50,9 +53,9 @@ main {
     margin-left: 165px;
     margin-right: 50px; 
     position: fixed;
-left: 50%;
-top: 220px;
-transform: translate(-50%, -50%);
+    left: 50%;
+    top: 220px;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -114,7 +117,7 @@ transform: translate(-50%, -50%);
     padding: 0;
     width: auto;
     overflow: visible;
-
+    font-family: 'W95FA', sans-serif;
     background-color: #C3C3C3;
     box-shadow: inset -1px -1px 0px 1px #262626, inset 1px 1px 0px 1px #F0F0F0, inset -3px -3px 0px 1px #7E7E7E, inset 3px 3px 0px 1px #B1B1B1;
     
@@ -124,6 +127,7 @@ transform: translate(-50%, -50%);
     height: 40px;
     width: 120px;
     margin: 0px 0px 0px 10px;
+    font-family: 'W95FA', sans-serif;
 }
 
 footer{
@@ -135,7 +139,7 @@ footer{
     margin: 0px 0px 0px 0px;
 
     height: 55px;
-
+    font-family: 'W95FA', sans-serif;
     position: absolute;
     width: 100%;
     bottom: 0; 
@@ -147,6 +151,7 @@ footer{
     width: 139px;
     border: solid 1px red;
     margin: 0px 10px 0px 0px;
+    font-family: 'W95FA', sans-serif;
 }
 
 
@@ -181,7 +186,7 @@ p{
     justify-content: space-around;
     align-content: flex-start;
     gap: 5px;
-
+    font-family: 'W95FA', sans-serif;
     margin: 20px 20px 20px 20px;
 }
 .img{
@@ -192,4 +197,5 @@ img{
 }
 .nometexto{
     font-size: 15px;
+    font-family: 'W95FA', sans-serif;
 }
