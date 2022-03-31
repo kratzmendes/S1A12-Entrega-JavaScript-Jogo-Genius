@@ -19,12 +19,12 @@ let menu = [
     {
         id:"0",
         img: "./computador.png",
-        nome: "Pontuação: ",
+        nome: "Pontuação: 0",
     },
     {
         id:"1",
         img: "./Network Neighborhood (48x48px).png",
-        nome: "Nível: ",
+        nome: "Nível: 1",
     },
     {
         id:"2",
@@ -64,6 +64,7 @@ for(let i=0;i<menu.length;i++){
 
     let MenudivNome = document.createElement("div");
     MenudivNome.setAttribute("class","nometexto");
+    MenudivNome.setAttribute("id",`texto${i}`);
     MenudivNome.innerText = `${menu[i].nome}`
     if(menu[i].id==2){
         divMenu.addEventListener("click", iniciaJogo)
@@ -230,8 +231,11 @@ function iniciaJogo(){
 function proxFase(){
     pontos++;
     fase++;
+    let pontuacao = document.getElementById("texto1");
+    pontuacao.innerText = `Nível: ${fase}`;
     criaCores();
-
+   
+   
 }
 
 function criaCores(){
@@ -240,13 +244,14 @@ function criaCores(){
     cores[cores.length] = novasCores;
     coresClickadas = [];
 
-    for(let i in cores) {
+    for(let i=0; i<cores.length; i++) {
         
         let corDiv = criaNomeCor(cores[i]);
         
         acendeCor(corDiv, Number(i) + 1);
+
+
     }
-//??????    alert(`Sua vez de jogar!`);
     return cores;
 }
 function criaNomeCor(cor){
@@ -306,19 +311,25 @@ function verificaCliques() {
 
 
     for(let i in coresClickadas) {
+
+
         if(coresClickadas[i] != cores[i]) {
             
             vocePerdeu();
-            //break;
+            break;
         }
+        else if(coresClickadas[i] == cores[i]){
+            pontos++;
+        }
+
     }
     if(coresClickadas.length == cores.length) {
-        alert(`Pontuação: ${pontos}!\nVocê acertou!\n O seu level atual é de ${fase}!`);
-        //let pontuacao = document.getElementById("0");
-        //pontuacao.innerText = `Pontuação: ${pontos}`;
-        //adic classe pro innex text
+        //alert(`Pontuação: ${pontos}!\nVocê acertou!\n O seu level atual é de ${fase}!`);
+        let pontuacao = document.getElementById("texto0");
+        pontuacao.innerText = `Pontuação: ${pontos}`;
         
-        
+
+
         proxFase();
     }
 }
@@ -327,6 +338,10 @@ function vocePerdeu() {
    
     alert(`Pontuação: ${pontos}!\nVocê perdeu o jogo!\n Você chegou até a fase nº ${fase}!\nClique em OK para iniciar um novo jogo`);
     cores = [];
+    pontos = 0;
+    let pontuacao = document.getElementById("texto0");
+    pontuacao.innerText = `Pontuação: ${pontos}`;
+    
     coresClickadas = [];
 
     iniciaJogo();
