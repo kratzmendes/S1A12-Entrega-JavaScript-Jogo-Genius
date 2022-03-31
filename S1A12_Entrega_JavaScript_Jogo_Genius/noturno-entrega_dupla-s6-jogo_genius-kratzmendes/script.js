@@ -3,6 +3,74 @@ const tagBody = document.querySelector("body");
 
 const tagMain = document.createElement("main");
 
+//criação do menu
+
+// const divMenu = document.createElement("div");
+// divMenu.setAttribute("class","menu");
+
+// const divMenuCard = document.createElement("div");
+// divMenuCard.setAttribute("class","pontuação");
+// const divMenuCardImg = document.createElement("img");
+// divMenuCardImg.setAttribute("url","./");
+// tagBody.appendChild(divMenuCard);
+// divMenuCard.appendChild(divMenuCardImg);
+
+let menu = [
+    {
+        id:"0",
+        img: "./computador.png",
+        nome: "Pontuação: ",
+    },
+    {
+        id:"1",
+        img: "./Network Neighborhood (48x48px).png",
+        nome: "Nível: ",
+    },
+    {
+        id:"2",
+        img: "./Recycle Bin with paper-1 1.png",
+        nome: "Reiniciar Jogo",
+    },
+    {
+        id:"3",
+        img: "./Documents Folder-1 1.png",
+        nome: "GIT Rebecca",
+    },
+    {
+        id:"4",
+        img: "./Documents Folder-1 1.png",
+        nome: "GIT Leonardo",
+    },
+];
+console.log(menu);
+
+let tagAside = document.createElement("div");
+tagMain.appendChild(tagAside);
+let valorPontuacao = 0;
+let valorNivel = 0;
+
+for(let i=0;i<menu.length;i++){
+
+    let divMenu = document.createElement("div");
+    divMenu.setAttribute("class","menu");
+
+    let menuDivImg = document.createElement("button");
+    menuDivImg.setAttribute("class","img");
+    let tagImg = document.createElement("img");
+    tagImg.setAttribute("src",`${menu[i].img}`);
+    menuDivImg.appendChild(tagImg);
+    
+
+    let MenudivNome = document.createElement("div");
+    MenudivNome.innerText = `${menu[i].nome}`
+
+    tagAside.appendChild(divMenu);
+    divMenu.appendChild(menuDivImg);
+    divMenu.appendChild(MenudivNome);
+
+}
+
+
 const divContainer = document.createElement("div");
 divContainer.setAttribute("class","container");
 
@@ -26,6 +94,8 @@ divContainer.appendChild(divAmarelo);
 tagMain.appendChild(divContainer);
 
 tagBody.appendChild(tagMain);
+
+
 
 
 // criação da tag footer e seus atributos
@@ -60,6 +130,7 @@ divDevs.appendChild(tagP);
 tagFooter.appendChild(divDevs);
 tagBody.appendChild(tagFooter);
 
+// gitLeonardo.appendChild(menu[4]);
 
 let cores = [];
 let coresClickadas = [];
