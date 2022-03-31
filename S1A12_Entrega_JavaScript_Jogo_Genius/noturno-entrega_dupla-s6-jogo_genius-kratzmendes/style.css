@@ -16,7 +16,7 @@ body {
     background-size: 500px;
     background-position: top center;
     
-    margin: 100px 0px 55px 50px;
+    margin: 0px 0px 0px 0px;
     background-color: #008282;
     font-family: 'W95FA';
     color: white;
@@ -48,10 +48,10 @@ main {
     width: 250px;
     flex-wrap: wrap;
     margin-left: 165px;
-    /* margin-right: 370px; */
+    margin-right: 50px; 
     position: fixed;
-left: 46%;
-top: 35%;
+left: 50%;
+top: 220px;
 transform: translate(-50%, -50%);
 }
 
@@ -59,9 +59,9 @@ transform: translate(-50%, -50%);
 .verde    {
     font-family: "W95FA";
     background-color: rgb(17, 247, 17);
-    height: 80px;
-    width: 80px;
-    margin: 20px 20px 20px 20px;
+    height: 85px;
+    width: 75px;
+    margin: 20px 50px 20px -20px;
     border: 2px solid transparent 
        
         
@@ -69,9 +69,9 @@ transform: translate(-50%, -50%);
 
 .vermelho   {
     background-color: red;
-    height: 80px;
-    width: 80px;
-    margin: 20px 20px 20px 20px;
+    height: 85px;
+    width: 75px;
+    margin: 20px 50px 20px -25px;
     border: 2px solid transparent;
        
 }
@@ -79,18 +79,18 @@ transform: translate(-50%, -50%);
 
 .amarelo   {
     background-color: yellow;
-    height: 80px;
-    width: 80px;
-    margin: 20px 20px 20px 20px;
+    height: 85px;
+    width: 75px;
+    margin: 20px 35px 20px -5px;
     border: 2px solid transparent; 
        
 }
 
 .azul   {
     background-color: blue;
-    height: 80px;
-    width: 80px;
-    margin: 20px 20px 20px 20px;
+    height: 85px;
+    width: 75px;
+    margin: 20px 35px 20px -25px;
     border: 2px solid transparent;
 
 }
@@ -132,7 +132,7 @@ footer{
     align-items:center;
     margin-top: 100px;
  
-    margin: 100px 0px 0px -50px;
+    margin: 0px 0px 0px 0px;
 
     height: 55px;
 
@@ -181,6 +181,8 @@ p{
     justify-content: space-around;
     align-content: flex-start;
     gap: 5px;
+
+    margin: 20px 20px 20px 20px;
 }
 .img{
     margin-top: 5px;

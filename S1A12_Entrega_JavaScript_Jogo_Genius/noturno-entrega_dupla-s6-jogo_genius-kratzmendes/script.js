@@ -118,7 +118,8 @@ let hoje = new Date();
 let hora = hoje.getHours() + ":" + hoje.getMinutes();
 
 
-/*
+/*  INNER HTML!!
+
 let theDiv = document.getElementById("relogio");
 let content = document.createTextNode("HORA");
 theDiv.appendChild(content);
