@@ -35,11 +35,13 @@ let menu = [
         id:"3",
         img: "./Documents Folder-1 1.png",
         nome: "GIT Rebecca",
+        link:"https://github.com/RebeccaPires",
     },
     {
         id:"4",
         img: "./Documents Folder-1 1.png",
         nome: "GIT Leonardo",
+        link:"https://github.com/kratzmendes",
     },
 ];
 console.log(menu);
@@ -53,23 +55,38 @@ for(let i=0;i<menu.length;i++){
 
     let divMenu = document.createElement("div");
     divMenu.setAttribute("class","menu");
-
+    divMenu.id = `${menu[i].id}`
     let menuDivImg = document.createElement("div");
     menuDivImg.setAttribute("class","img");
     let tagImg = document.createElement("img");
     tagImg.setAttribute("src",`${menu[i].img}`);
     menuDivImg.appendChild(tagImg);
-    
 
     let MenudivNome = document.createElement("div");
     MenudivNome.setAttribute("class","nometexto");
     MenudivNome.innerText = `${menu[i].nome}`
+    if(menu[i].id==2){
+        divMenu.addEventListener("click", iniciaJogo)
+    }
+    console.log(menu[i].id);
+    if(menu[i].id==3||menu[i].id==4){
+        divMenu.addEventListener("click", function(meuGit){
+            // window.location.href = menu[i].link
+            window.open(menu[i].link,"_blank")
+        })
+        console.log("oi");
+    }
 
     tagAside.appendChild(divMenu);
     divMenu.appendChild(menuDivImg);
     divMenu.appendChild(MenudivNome);
 
 }
+
+// reiniciarJogo.onclick = () => click(botao);
+// function botao(){
+//     menu[2].innerHTML
+// }
 
 
 const divContainer = document.createElement("div");
@@ -283,7 +300,7 @@ function verificaCliques() {
 
 function vocePerdeu() {
    
-    alert(`Pontuação: ${pontos}!\nVocê perdeu o jogo!\n Você chegou atá a fase nº ${fase}!\nClique em OK para iniciar um novo jogo`);
+    alert(`Pontuação: ${pontos}!\nVocê perdeu o jogo!\n Você chegou até a fase nº ${fase}!\nClique em OK para iniciar um novo jogo`);
     cores = [];
     coresClickadas = [];
 
@@ -292,3 +309,6 @@ function vocePerdeu() {
 
 
 iniciaJogo();
+
+let reiniciarJogo = document.getElementById("2");
+console.log(reiniciarJogo);
