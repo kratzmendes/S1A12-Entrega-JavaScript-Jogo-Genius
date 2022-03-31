@@ -177,9 +177,20 @@ footer{
 
     margin: 0px 10px 0px 0px;
     font-family: 'W95FA', sans-serif;
+    font-size: 24px;
+    color: black;
 
-    box-shadow: inset -1px -1px 0px 1px #F0F0F0, inset 1px 1px 0px 1px #7E7E7E;
+    box-shadow: inset -1px -1px 0px 1px #F0F0F0, inset 1px 1px 0px 1px #7E7E7E; 
     
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+.btnVol{
+    height: 20px;
+    width: 20px;
 }
 
 

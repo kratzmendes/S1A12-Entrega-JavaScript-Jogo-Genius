@@ -122,7 +122,7 @@ tagBody.appendChild(tagMain);
 const tagFooter = document.createElement("footer");
 tagFooter.setAttribute("class","windows");
 
-
+//botão iniciar
 const divIniciar = document.createElement("button");
 divIniciar.setAttribute("class","iniciar windowsbtn");
 divIniciar.setAttribute("id","btnIniciar");
@@ -136,6 +136,8 @@ divIniciar.appendChild(imgBtn);
 
 tagFooter.appendChild(divIniciar);
 
+//hora
+
 
 //let textoIniciar = document.getElementById('btnIniciar');
 // create new li element
@@ -145,16 +147,20 @@ tagFooter.appendChild(divIniciar);
 //menu.appendChild(li);
 
 
-
 const divHora = document.createElement("div");
 divHora.setAttribute("class","windowstime");
 divHora.setAttribute("id","relogio");
-tagFooter.appendChild(divHora);
 
 let hoje = new Date();
-let hora = hoje.getHours() + ":" + hoje.getMinutes();
+let hora = hoje.getHours() + ":" + ('0'+hoje.getMinutes()).slice(-2);
 
-alert(`${hora}`);
+divHora.innerText = `${hora}`;
+let imgVol = document.createElement('img');
+imgVol.setAttribute('class', 'btnVol');
+imgVol.setAttribute('src', './Volume-2 1.png');
+divHora.appendChild(imgVol);
+tagFooter.appendChild(divHora);
+
 
 /*  INNER HTML!!
 
