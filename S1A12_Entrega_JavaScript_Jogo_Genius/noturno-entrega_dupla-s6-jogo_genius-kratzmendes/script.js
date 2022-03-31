@@ -54,7 +54,7 @@ for(let i=0;i<menu.length;i++){
     let divMenu = document.createElement("div");
     divMenu.setAttribute("class","menu");
 
-    let menuDivImg = document.createElement("button");
+    let menuDivImg = document.createElement("div");
     menuDivImg.setAttribute("class","img");
     let tagImg = document.createElement("img");
     tagImg.setAttribute("src",`${menu[i].img}`);
