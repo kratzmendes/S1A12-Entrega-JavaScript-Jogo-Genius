@@ -47,7 +47,11 @@ main {
     width: 250px;
     flex-wrap: wrap;
     margin-left: 165px;
-    margin-right: 370px;
+    /* margin-right: 370px; */
+    position: fixed;
+left: 46%;
+top: 35%;
+transform: translate(-50%, -50%);
 }
 
 
@@ -91,7 +95,7 @@ main {
 }
 
 .selected {
-    border: solid 2px white;
+    border: dashed 2px rgb(148, 30, 202);
     display: flex;
 }
 
