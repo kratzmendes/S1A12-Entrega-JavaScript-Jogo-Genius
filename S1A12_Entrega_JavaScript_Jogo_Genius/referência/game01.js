@@ -1,8 +1,6 @@
-/* 
-                    ╔═╦═╗
-                    ║║║║╠═╦╦╦╦══╦═╦╦╦╗
-                    ║║║║║╩╣║║║║║║╩╣║║║
-Developed By:   REBECCA e LEO     ╚╩═╩╩═╩══╩╩╩╩═╩══╝
+/* BRANCH DO LEO
+
+Developed By:   REBECCA e LEO     
 */
 let order = []; // Ordem
 let clickedOrder = []; // Ordem dos clicks
@@ -144,6 +142,10 @@ green.onclick = () => click(0);
 red.onclick = () => click(1);
 yellow.onclick = () => click(2);
 blue.onclick = () => click(3);
+
+
+
+
 
 // som da cor
 let soundColorPlay = (color) => {

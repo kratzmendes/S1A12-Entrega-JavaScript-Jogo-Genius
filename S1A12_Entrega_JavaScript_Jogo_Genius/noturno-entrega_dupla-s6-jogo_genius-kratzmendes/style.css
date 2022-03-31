@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "W95FA";
+    src: url('http://fonts.cdnfonts.com/css/w95fa');
+}
+
+@import url('http://fonts.cdnfonts.com/css/w95fa');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 90vh;
+    width: 90vw;
+    background-image: url(./win95_logo.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: top center;
+    
+    margin: 0px 0px 0px 0px;
+    background-color: #008282;
+    font-family: 'W95FA';
+    color: white;
+    font-family: 'W95FA', sans-serif;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-self: auto;
+    /* margin-right: 100px; */
+    font-family: 'W95FA', sans-serif;
+}
+
+.container{
+    /* height: 200px;
+    width: 220px;     
+    margin-left: 165px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap; */
+    font-family: 'W95FA', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    flex-wrap: wrap;
+    margin-left: 165px;
+    margin-right: 50px; 
+    position: fixed;
+    left: 50%;
+    top: 220px;
+    transform: translate(-50%, -50%);
+}
+
+.container:hover{
+    cursor: pointer;
+}
+
+
+.verde    {
+    font-family: "W95FA";
+    background-color: rgb(17, 247, 17);
+    height: 85px;
+    width: 75px;
+    margin: 20px 50px 20px -20px;
+    border: 2px solid transparent 
+       
+        
+}
+
+.vermelho   {
+    background-color: red;
+    height: 85px;
+    width: 75px;
+    margin: 20px 50px 20px -25px;
+    border: 2px solid transparent;
+       
+}
+
+
+.amarelo   {
+    background-color: yellow;
+    height: 85px;
+    width: 75px;
+    margin: 20px 35px 20px -5px;
+    border: 2px solid transparent; 
+       
+}
+
+.azul   {
+    background-color: blue;
+    height: 85px;
+    width: 75px;
+    margin: 20px 35px 20px -25px;
+    border: 2px solid transparent;
+
+}
+
+.selected {
+    border: dashed 2px rgb(148, 30, 202);
+    display: flex;
+}
+
+.windows {
+    
+    background-color: #C3C3C3;
+    box-shadow: inset -1px -1px 0px 1px #262626, inset 1px 1px 0px 1px #F0F0F0, inset -3px -3px 0px 1px #7E7E7E, inset 4px 3px 0px 1px #B1B1B1;
+    
+}
+
+.windowsbtn {
+    
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    font-family: 'W95FA', sans-serif;
+    background-color: #C3C3C3;
+    box-shadow: inset -1px -1px 0px 1px #262626, inset 1px 1px 0px 1px #F0F0F0, inset -3px -3px 0px 1px #7E7E7E, inset 3px 3px 0px 1px #B1B1B1;
+    
+}
+
+.iniciar{
+    height: 40px;
+    width: 120px;
+    margin: 0px 0px 0px 10px;
+    font-family: 'W95FA', sans-serif;
+}
+
+.iniciar:active{
+    box-shadow: inset 1px 1px 0px 1px #262626, inset -1px -1px 0px 1px #F0F0F0, inset 3px 3px 0px 1px #7E7E7E, inset -3px -3px 0px 1px #B1B1B1;
+    background-color: #E3E3E3;
+
+    outline: 1px dashed black;
+    outline-offset: -7px;
+
+}
+
+footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: 100px;
+ 
+    margin: 0px 0px 0px 0px;
+
+    height: 55px;
+    font-family: 'W95FA', sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 0; 
+}
+
+.btnLogo{
+    height: 32px;
+    width: 32px;
+}
+.iniciar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+.windowstime{
+    height: 30px;
+    width: 139px;
+
+    margin: 0px 10px 0px 0px;
+    font-family: 'W95FA', sans-serif;
+    font-size: 24px;
+    color: black;
+
+    box-shadow: inset -1px -1px 0px 1px #F0F0F0, inset 1px 1px 0px 1px #7E7E7E; 
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+.btnVol{
+    height: 20px;
+    width: 20px;
+}
+
+/* Efeito de Luz 
+opacity:0.5;
+box-shadow: 0 0 5px white,
+0 0 25px white,
+0 0 50px white,
+0 0 100px white; */
+
+
+
+
+p{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.devs{    
+
+    width: 400px;
+    border: none;
+}
+
+.credito{
+    margin: 20px 20px 20px 20px;
+    
+}
+
+.gitDev{
+    margin: 20px 20px 20px 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: flex-start;
+    gap: 5px;
+    font-family: 'W95FA', sans-serif;
+    margin: 20px 20px 20px 20px;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.img{
+    margin-top: 5px;
+}
+img{
+    height: 50px;
+}
+.nometexto{
+    font-size: 15px;
+    font-family: 'W95FA', sans-serif;
+}
