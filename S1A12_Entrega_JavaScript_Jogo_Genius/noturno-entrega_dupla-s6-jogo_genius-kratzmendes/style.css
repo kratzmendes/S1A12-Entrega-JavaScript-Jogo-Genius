@@ -130,6 +130,11 @@ main {
     font-family: 'W95FA', sans-serif;
 }
 
+.iniciar:active{
+    box-shadow: inset -1px -1px 0px 1px red, inset 1px 1px 0px 1px #F0F0F0, inset -3px -3px 0px 1px #7E7E7E, inset 3px 3px 0px 1px #B1B1B1;
+    
+}
+
 footer{
     display:flex;
     justify-content:space-between;
@@ -145,13 +150,28 @@ footer{
     bottom: 0; 
 }
 
+.btnLogo{
+    height: 32px;
+    width: 32px;
+}
+.iniciar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+
 
 .windowstime{
     height: 30px;
     width: 139px;
-    border: solid 1px red;
+
     margin: 0px 10px 0px 0px;
     font-family: 'W95FA', sans-serif;
+
+    box-shadow: inset -1px -1px 0px 1px #F0F0F0, inset 1px 1px 0px 1px #7E7E7E;
+    
 }
 
 

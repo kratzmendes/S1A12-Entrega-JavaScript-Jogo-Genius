@@ -107,7 +107,26 @@ tagFooter.setAttribute("class","windows");
 
 const divIniciar = document.createElement("button");
 divIniciar.setAttribute("class","iniciar windowsbtn");
+divIniciar.setAttribute("id","btnIniciar");
+divIniciar.innerText = 'Iniciar';
+
+let imgBtn = document.createElement('img');
+imgBtn.setAttribute('class', 'btnLogo');
+
+imgBtn.setAttribute('src', './Windows logo (without text)-2 1.png');
+divIniciar.appendChild(imgBtn);
+
 tagFooter.appendChild(divIniciar);
+
+
+//let textoIniciar = document.getElementById('btnIniciar');
+// create new li element
+//let texto= document.createElement('li');
+//li.textContent = 'About Us';
+// add it to the ul element
+//menu.appendChild(li);
+
+
 
 const divHora = document.createElement("div");
 divHora.setAttribute("class","windowstime");
