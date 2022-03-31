@@ -9,8 +9,8 @@
 }
 
 body {
-    height: 100vh;
-    width: 100wh;
+    height: 90vh;
+    width: 90vw;
     background-image: url(./win95_logo.png);
     background-repeat: no-repeat;
     background-size: 500px;
@@ -28,7 +28,7 @@ main {
     width: 100%;
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     align-self: auto;
     /* margin-right: 100px; */
@@ -47,6 +47,7 @@ main {
     width: 250px;
     flex-wrap: wrap;
     margin-left: 165px;
+    margin-right: 370px;
 }
 
 
