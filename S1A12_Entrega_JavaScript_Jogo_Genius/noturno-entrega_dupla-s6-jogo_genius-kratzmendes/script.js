@@ -219,6 +219,7 @@ let cores = [];
 let coresClickadas = [];
 let pontos = 0;
 let fase = 0;
+let iniciou = false;
 
 const vermelho = document.querySelector('.divVermelho');
 const verde = document.querySelector('.divVerde');
@@ -230,6 +231,7 @@ function iniciaJogo(){
     alert('Bem vindo ao Genius! Iniciando novo jogo!');
     pontos = 0;
     fase = 0;
+    iniciou = true;
 
     proxFase();
 }
@@ -289,11 +291,12 @@ function acendeCor(element, number) {
     }, number+600);
 }
 
-
 divVermelho.onclick = () => click(0);
 divVerde.onclick = () => click(1);
 divAzul.onclick = () => click(2);
 divAmarelo.onclick = () => click(3);
+
+
 
 function click(cor) {
 
@@ -324,9 +327,9 @@ function verificaCliques() {
             vocePerdeu();
             break;
         }
-        else if(coresClickadas[i] == cores[i]){
-            pontos++;
-        }
+//        else if(coresClickadas[i] == cores[i]){
+//          pontos++;
+//    }
 
     }
     if(coresClickadas.length == cores.length) {
