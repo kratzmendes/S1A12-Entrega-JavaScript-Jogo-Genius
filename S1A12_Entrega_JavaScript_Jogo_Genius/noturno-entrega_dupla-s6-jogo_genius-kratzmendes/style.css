@@ -58,6 +58,10 @@ main {
     transform: translate(-50%, -50%);
 }
 
+.container:hover{
+    cursor: pointer;
+}
+
 
 .verde    {
     font-family: "W95FA";
@@ -208,6 +212,9 @@ p{
     gap: 5px;
     font-family: 'W95FA', sans-serif;
     margin: 20px 20px 20px 20px;
+}
+.menu:hover{
+    cursor: pointer;
 }
 .img{
     margin-top: 5px;
