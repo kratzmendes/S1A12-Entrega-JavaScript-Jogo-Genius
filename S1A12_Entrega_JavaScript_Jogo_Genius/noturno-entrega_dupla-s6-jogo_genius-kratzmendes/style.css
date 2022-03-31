@@ -135,8 +135,12 @@ main {
 }
 
 .iniciar:active{
-    box-shadow: inset -1px -1px 0px 1px red, inset 1px 1px 0px 1px #F0F0F0, inset -3px -3px 0px 1px #7E7E7E, inset 3px 3px 0px 1px #B1B1B1;
-    
+    box-shadow: inset 1px 1px 0px 1px #262626, inset -1px -1px 0px 1px #F0F0F0, inset 3px 3px 0px 1px #7E7E7E, inset -3px -3px 0px 1px #B1B1B1;
+    background-color: #E3E3E3;
+
+    outline: 1px dashed black;
+    outline-offset: -7px;
+
 }
 
 footer{

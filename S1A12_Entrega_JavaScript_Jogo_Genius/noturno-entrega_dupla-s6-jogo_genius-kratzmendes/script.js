@@ -314,6 +314,11 @@ function verificaCliques() {
     }
     if(coresClickadas.length == cores.length) {
         alert(`Pontuação: ${pontos}!\nVocê acertou!\n O seu level atual é de ${fase}!`);
+        //let pontuacao = document.getElementById("0");
+        //pontuacao.innerText = `Pontuação: ${pontos}`;
+        //adic classe pro innex text
+        
+        
         proxFase();
     }
 }
