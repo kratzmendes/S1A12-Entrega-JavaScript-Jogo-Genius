@@ -62,6 +62,7 @@ for(let i=0;i<menu.length;i++){
     
 
     let MenudivNome = document.createElement("div");
+    MenudivNome.setAttribute("class","nometexto");
     MenudivNome.innerText = `${menu[i].nome}`
 
     tagAside.appendChild(divMenu);
